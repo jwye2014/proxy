@@ -144,7 +144,7 @@ def proxy(conn, client_addr):
                 ss=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
                 ss.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
                 
-                if(check==1 and change==1):
+                if(check==1):
                         s=hashlib.md5()
                         s.update(url)
                         name=s.hexdigest()
